@@ -7,12 +7,12 @@ const useWordle = (solution) => {
   const [isWinner, setIsWinner] = useState(false);
 
   function getLetterStatus(letter, index) {
-    // if (solution.includes(letter)) {
-    //   if (index === solution.indexOf(letter))
-    //     return "match";
-    //   return "exists";
-    // }
-    // return '';
+    if (solution.includes(letter)) {
+      if (index - 1 === solution.indexOf(letter))
+        return "match";
+      return "exists";
+    }
+    return '';
   }
 
   function handleKeyUp(e) {

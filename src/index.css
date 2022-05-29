@@ -11,3 +11,9 @@ body {
 #root {
   height: 100vh;
 }
+.match {
+  background-color: green;
+}
+.exists {
+  background-color: orange;
+}
