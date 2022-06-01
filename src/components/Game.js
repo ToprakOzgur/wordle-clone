@@ -7,7 +7,7 @@ const Game = ({ solution }) => {
   const [turn, handleKeyUp, currentGuess, history, getLetterStatus] = useWordle(solution);
   return (
     <section className="grid flex gap-2">
-      <h2>{currentGuess}</h2>
+
       <Grid currentGuess={currentGuess} turn={turn} history={history} getLetterStatus={getLetterStatus} />
       <Keyboard handleKeyUp={handleKeyUp} />
     </section>
