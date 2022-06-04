@@ -4,15 +4,14 @@ const Letter = ({ letter, getLetterStatus, index, isCurrent }) => {
   const [letterClass, setLetterClass] = useState("");
 
   useEffect(() => {
-
     console.log(letter);
     if (letter !== "")
       setLetterClass(getLetterStatus(letter, index));
 
   }, [letter, index, getLetterStatus])
   if (!isCurrent)
-    return <div className={`h-20 w-20 text-center bg-slate-400 grid items-center ${letterClass}`} > {letter}</div >;
-  return <div className={`h-20 w-20 text-center bg-slate-400 grid items-center`} > {letter}</div >;
+    return <div className={`bg-slate-200 letter ${letterClass}`} > {letter.toUpperCase()}</div >;
+  return <div className={`bg-slate-400 letter`} > {letter.toUpperCase()}</div >;
 };
 
 export default Letter;

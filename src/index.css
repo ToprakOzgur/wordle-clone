@@ -1,19 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #212529;
-  background-color: #aaa;
+  background-color: #121213;
+  font-family: "Inter", "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .letter {
+    border-radius: 0.2em;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(231 229 228 / var(--tw-border-opacity));
+    text-align: center;
+
+    align-items: center;
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+    display: grid;
+    place-items: center;
+    height: 10vmin;
+    aspect-ratio: 1;
+  }
+}
+@layer utilities {
+  .match {
+    background-color: #538d4e;
+  }
+  .exists {
+    background-color: #c9b458;
+  }
 }
 #root {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-.match {
-  background-color: green;
+.app {
+  width: min(500px, 100%);
 }
-.exists {
-  background-color: orange;
+.gridGame {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -6,8 +6,8 @@ function App() {
   const [solution, getNewSolution] = useRandomWord();
 
   return (
-    <div className="bg-cyan-200 h-full flex justify-start items-center flex-col">
-      <h1 className="text-3xl font-bold underline">WORDLE</h1>
+    <div className="h-full flex flex-col app justify-center items-center ">
+      <h1 className="text-3xl font-bold underline text-gray-200 mb-6  mt-10 text-center">WORDLE</h1>
       <Game solution={solution} />
     </div>
   );

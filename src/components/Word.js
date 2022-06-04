@@ -4,7 +4,7 @@ import Letter from "./Letter";
 const Word = ({ getLetterStatus, word, isCurrent }) => {
 
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex gap-2 mb-2 justify-center items-center" >
 
       {word && word.map((letter, index) => {
         return <Letter letter={letter} getLetterStatus={getLetterStatus} index={index} key={index} isCurrent={isCurrent} />
