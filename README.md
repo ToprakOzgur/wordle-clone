@@ -2,16 +2,14 @@
 
 This project is a clone clone of [Wordle](https://www.nytimes.com/games/wordle/index.html)
 
-## Available Scripts
+## Tech
 
-In the project directory, you can run:
+Developed with:
 
-### `npm start`
+- React
+- Tailwind
+- Custom Hooks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Live App Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
+[App link:](https://chic-tulumba-2e3bda.netlify.app/)
