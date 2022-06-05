@@ -11,7 +11,6 @@ const Keyboard = ({ handleKeyUp, history }) => {
   }, [handleKeyUp, history]);
 
   function checkUsedKeys(letter) {
-    console.log(letter);
     for (const guess of history) {
       if (guess && Array.isArray(guess) && guess.includes(letter)) {
         return "used";
@@ -21,8 +20,8 @@ const Keyboard = ({ handleKeyUp, history }) => {
   }
 
   return <div className="text-center mt-2 flex justify-center flex-col gap-2">
-    {keys.map((guess) => {
-      return <div className="row flex justify-center gap-2">
+    {keys.map((guess, index) => {
+      return <div className="row flex justify-center gap-2" key={index}>
         {guess.map((b) => { return <span key={b} className={`button ${checkUsedKeys(b)}`} onClick={() => handleKeyUp({ "key": `${b}` })}>{b}</span> })}
       </div>
     })}
