@@ -20,7 +20,7 @@ const useWordle = (solution) => {
     if (isWinner) return;
     if (turn > 6) return;
 
-    if (e.key === "Backspace")
+    if (e.key === "Backspace" || e.key === "del")
       setCurrentGuess((prev) => prev.slice(0, -1));
     else if (e.key === "Enter" && currentGuess.length === 5)
       checkWinner();

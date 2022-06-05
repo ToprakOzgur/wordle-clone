@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="h-full flex flex-col app justify-center items-center ">
-      <h1 className="text-3xl font-bold underline text-gray-200 mb-6  mt-10 text-center">WORDLE</h1>
+      <h1 className="text-3xl font-bold underline text-gray-200 mb-6  mt-2 text-center">WORDLE</h1>
       <Game solution={solution} />
     </div>
   );

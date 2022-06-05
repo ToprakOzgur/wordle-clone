@@ -8,7 +8,7 @@ const Game = ({ solution }) => {
   return (
     <section className="w-full">
       <Grid currentGuess={currentGuess} turn={turn} history={history} getLetterStatus={getLetterStatus} />
-      <Keyboard handleKeyUp={handleKeyUp} />
+      <Keyboard handleKeyUp={handleKeyUp} history={history} />
     </section>
   );
 };

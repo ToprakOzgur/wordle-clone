@@ -33,6 +33,14 @@ body {
     height: 10vmin;
     aspect-ratio: 1;
   }
+  .button {
+    padding: 0.5rem;
+    border-width: 2px;
+    text-transform: uppercase;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+    min-width: 35px;
+  }
 }
 @layer utilities {
   .match {
@@ -40,6 +48,9 @@ body {
   }
   .exists {
     background-color: #c9b458;
+  }
+  .used {
+    background-color: grey;
   }
 }
 #root {

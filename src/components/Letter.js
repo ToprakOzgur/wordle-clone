@@ -4,7 +4,7 @@ const Letter = ({ letter, getLetterStatus, index, isCurrent }) => {
   const [letterClass, setLetterClass] = useState("");
 
   useEffect(() => {
-    console.log(letter);
+
     if (letter !== "")
       setLetterClass(getLetterStatus(letter, index));
 
